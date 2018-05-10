@@ -7,7 +7,7 @@ let bal:string = "dsdas";
 
 
 // Serve static react app build
-app.use(express.static("dist"));
+app.use(express.static("dist-client"));
 
 // Api endpoints
 app.get("/api/getUsername", (req, res) =>

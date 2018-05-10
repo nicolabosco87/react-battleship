@@ -6,7 +6,7 @@ module.exports = {
   entry: './client/index.tsx',
   output: {
     filename: '[name].[chunkhash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist-client')
   },
 
   resolve: {
@@ -58,9 +58,9 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['dist-client']),
     new HtmlWebpackPlugin({
-        template: './src/index.html'
+        template: './client/index.html'
       })
   ]
 

@@ -7,6 +7,6 @@
     "target": "es6"
   },
   "include": [
-    "./server/**/*"
+    "./server/server.ts"
   ]
 }
