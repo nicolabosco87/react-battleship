@@ -6,10 +6,13 @@ class App extends Component {
   private bay: string = "Yaexz";
 
 
-
-
   render() {
-    return <div><h1>{this.bay}</h1></div>;
+    return <div>
+      <h1>{this.bay}</h1>
+      <form action="/api/start/" method="post">
+        <input type="text" name="name" />
+      </form>
+    </div>;
   }
 }
 

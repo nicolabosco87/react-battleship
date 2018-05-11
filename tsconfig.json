@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "../dist-server/",
+    "outDir": "./dist-server/",
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",
-    "target": "es6"
+    "target": "es6",
+    "lib": ["es5", "es6"]
   },
-  "include": [
-    "./server/server.ts"
+  "files": [
+    "server.ts"
   ]
 }
